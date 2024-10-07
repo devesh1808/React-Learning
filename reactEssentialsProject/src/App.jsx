@@ -1,3 +1,6 @@
+// Setting HTML attributes dynamically and loading image files in jsx
+import reactImg from './assets/react-core-concepts.png';
+
 // Using and Outputting dynamic values in jsx
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 
@@ -9,7 +12,7 @@ function Header() {
   const description = reactDescriptions[getRandomInt(2)];
   return (
     <header>
-      <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+      <img src={reactImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
         {description} React concepts you will need for almost any app you are
