@@ -1,11 +1,10 @@
-// Setting HTML attributes dynamically and loading image files in jsx
-import reactImg from './assets/react-core-concepts.png';
+import reactImg from "./assets/react-core-concepts.png";
+import componentsImg from "./assets/components.png";
 
-// Using and Outputting dynamic values in jsx
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
-function getRandomInt(max){
-  return Math.floor(Math.random() * (max+1));
+function getRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
 }
 
 function Header() {
@@ -22,12 +21,36 @@ function Header() {
   );
 }
 
+// making components reusable using props
+function CoreConcept(props) {
+  return (
+    <li>
+      <img src={props.image} alt="components image" />
+      <h3>{props.title}</h3>
+      <p>{props.description}</p>
+    </li>
+  );
+}
+
 function App() {
   return (
     <div>
       <Header />
       <main>
-        <h2>Time to get started!</h2>
+        <section id="core-concepts">
+          <h2>Core Concepts</h2>
+          <ul>
+            {/* Passing Values as props : title, description, image */}
+            <CoreConcept
+              title="Components"
+              description="The Core UI Building Block!"
+              image={componentsImg}
+            />
+            <CoreConcept />
+            <CoreConcept />
+            <CoreConcept />
+          </ul>
+        </section>
       </main>
     </div>
   );
