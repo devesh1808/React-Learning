@@ -46,7 +46,7 @@ function App() {
               description="The Core UI Building Block!"
               image={componentsImg}
             />
-            <CoreConcept />
+            <CoreConcept title="props" />
             <CoreConcept />
             <CoreConcept />
           </ul>
