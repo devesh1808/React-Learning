@@ -43,13 +43,25 @@ function App() {
           <ul>
             {/* Passing Values as props : title, description, image */}
             <CoreConcept
-              title="Components"
-              description="The Core UI Building Block!"
-              image={componentsImg}
+              title={CORE_CONCEPTS[0].title}
+              description={CORE_CONCEPTS[0].description}
+              image={CORE_CONCEPTS[0].image}
             />
-            <CoreConcept title="props" />
-            <CoreConcept />
-            <CoreConcept />
+            <CoreConcept
+              title={CORE_CONCEPTS[1].title}
+              description={CORE_CONCEPTS[1].description}
+              image={CORE_CONCEPTS[1].image}
+            />
+            <CoreConcept
+              title={CORE_CONCEPTS[2].title}
+              description={CORE_CONCEPTS[2].description}
+              image={CORE_CONCEPTS[2].image}
+            />
+            <CoreConcept
+              title={CORE_CONCEPTS[3].title}
+              description={CORE_CONCEPTS[3].description}
+              image={CORE_CONCEPTS[3].image}
+            />
           </ul>
         </section>
       </main>
