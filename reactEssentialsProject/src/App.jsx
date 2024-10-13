@@ -28,6 +28,7 @@ function App() {
           <h2>Examples</h2>
           <menu>
             {/* Children Prop */}
+            {/* Passing onSelect function function as a prop to TabButton component */}
             <TabButton onSelect={handleSelect}>Components</TabButton>
             <TabButton onSelect={handleSelect}>JSX</TabButton>
             <TabButton onSelect={handleSelect}>Props</TabButton>
