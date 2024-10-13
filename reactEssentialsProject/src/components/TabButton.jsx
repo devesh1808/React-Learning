@@ -10,9 +10,14 @@
 
 // using object destructuring
 function TabButton({ children }) {
+
+  function handleClick(){
+    alert("Bhai Hai!")
+  }
+
   return (
     <li>
-      <button>{children}</button>
+      <button onClick={handleClick}>{children}</button>
     </li>
   );
 }
