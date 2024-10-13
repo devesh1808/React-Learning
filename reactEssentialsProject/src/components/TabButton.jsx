@@ -9,15 +9,11 @@
 
 
 // using object destructuring
-function TabButton({ children }) {
-
-  function handleClick(){
-    alert("Bhai Hai!")
-  }
+function TabButton({ children, onSelect }) {
 
   return (
     <li>
-      <button onClick={handleClick}>{children}</button>
+      <button onClick={onSelect}>{children}</button>
     </li>
   );
 }
