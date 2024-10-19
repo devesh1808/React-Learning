@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 //import componentsImg from "./assets/components.png";
 import { CORE_CONCEPTS } from "./data.js";
@@ -19,7 +19,7 @@ function App() {
   console.log("APP COMPONENT");
 
   return (
-    <div>
+    <Fragment>
       <Header />
       <main>
         <section id="core-concepts">
@@ -76,7 +76,7 @@ function App() {
           )}
         </section>
       </main>
-    </div>
+    </Fragment>
   );
 }
 
