@@ -19,7 +19,7 @@ function App() {
   console.log("APP COMPONENT");
 
   return (
-    <Fragment>
+    <>
       <Header />
       <main>
         <section id="core-concepts">
@@ -76,7 +76,7 @@ function App() {
           )}
         </section>
       </main>
-    </Fragment>
+    </>
   );
 }
 
