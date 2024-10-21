@@ -11,7 +11,7 @@ export default function Player({ name, symbol }) {
         {!isEditing ? (
           <span className="player-name">{name}</span>
         ) : (
-          <input type="input" required />
+          <input type="input" required value={name} />
         )}
         {/* <span className="player-name">{name}</span> */}
         <span className="player-symbol">{symbol}</span>
