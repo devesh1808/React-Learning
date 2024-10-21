@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { EXAMPLES } from "../data.js";
+import Section from "./Section.jsx";
 import TabButton from "./TabButton.jsx";
 
 function Examples() {
@@ -12,8 +13,7 @@ function Examples() {
   }
 
   return (
-    <section id="examples">
-      <h2>Examples</h2>
+    <Section title="Examples" id="examples">
       <menu>
         {/* Children Prop */}
         {/* Passing onSelect function function as a prop to TabButton component */}
@@ -55,7 +55,7 @@ function Examples() {
           </pre>
         </div>
       )}
-    </section>
+    </Section>
   );
 }
 
